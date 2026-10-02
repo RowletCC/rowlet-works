@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f6f7">
+  <title>Rowlet Works · Interfaces & moving things</title>
+  <meta name="description" content="Independent interface and motion studies by Jianhao Cheng. Try the working prototypes, inspect the source, and discuss a small paid project.">
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to the work</a>
+  <header class="masthead">
+    <a class="wordmark" href="./" aria-label="Rowlet Works home"><img src="./assets/mark.svg" width="32" height="32" alt="">ROWLET<span>WORKS</span></a>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#contact">Start a project <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="work" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="edition">INDEPENDENT DESIGN & ENGINEERING</p>
+        <h1 id="hero-title">Interfaces &<br>moving things.</h1>
+        <p class="intro">Original studies in how software looks, moves and responds. Open one and try it.</p>
+        <a class="text-link" href="./studies/form-field/" data-preview="form-field">Open Form / Field <span aria-hidden="true">↗</span></a>
+        <div class="hero-foot"><span class="index-no">01 / 02</span><span>Selected work<br>October 2026</span></div>
+      </div>
+      <figure class="hero-image">
+        <a href="./studies/form-field/" data-preview="form-field" aria-label="Open Form / Field interactive study"><img src="./assets/form-field.jpg" alt="Twenty-four pale blue and coral prisms arranged into a three-dimensional circular field." width="900" height="460" fetchpriority="high"></a>
+        <figcaption><span>FORM / FIELD</span><span>Procedural motion, 12 seconds</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="field-notes" aria-labelledby="field-title">
+      <div class="section-number" aria-hidden="true">01</div>
+      <div class="field-text"><h2 id="field-title">One set of objects.<br>Three ways to read it.</h2><p>A circle becomes a grid, then a spiral. Six coral objects hold their identity through every change.</p></div>
+      <div class="field-detail"><p>Scrub the timeline. Rotate the camera. Switch to wireframe. The preview plays the same animated GLB that you can download.</p><p class="project-links"><a href="./studies/form-field/form-field.glb" download>Download GLB <span aria-hidden="true">↓</span></a><a href="https://github.com/RowletCC/form-field">Source <span aria-hidden="true">↗</span></a></p><p class="technical-note">24 objects · 2,592 triangles · no textures<br>Browser playback tested. Unity / FBX unverified.</p></div>
+    </section>
+
+    <section class="pass" aria-labelledby="pass-title">
+      <div class="pass-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="pass-title">The Pass</h2><a class="text-link" href="./studies/the-pass/" data-preview="the-pass">Open The Pass <span aria-hidden="true">↗</span></a></div>
+      <a class="pass-image" href="./studies/the-pass/" data-preview="the-pass" aria-label="Open The Pass restaurant management prototype"><img src="./assets/the-pass.jpg" alt="The Pass restaurant interface with six tables, a selected service docket, a waiting list and a kitchen queue." loading="lazy" width="1280" height="960"></a>
+      <div class="pass-caption"><h3>A busy room.<br>A clear next move.</h3><p>Seat a party, serve a table, clear the plates. Every action changes the room. Menu pricing updates new orders while existing tickets keep their original price.</p><div><a href="https://github.com/RowletCC/the-pass-ui">View source <span aria-hidden="true">↗</span></a><p class="technical-note">Independent interface concept.<br>Fictional data. Browser implementation.<br>No Unreal integration.</p></div></div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div><h2 id="contact-title">Start with one<br>useful thing.</h2><p>A screen that works. A motion study with an exportable asset. A visual tool your team can use.</p></div>
+      <div class="contact-action"><p>Send the brief, the format and the deadline.<br>We can agree a small paid milestone first.</p><a class="contact-link" href="mailto:chengjacky073@gmail.com?subject=Project%20enquiry%20%2F%20Rowlet%20Works&body=Brief%3A%0A%0ADeliverable%20format%3A%0A%0ADeadline%3A%0A%0ABudget%3A%0A">Start a project <span aria-hidden="true">↗</span></a><p class="email">chengjacky073@gmail.com</p></div>
+    </section>
+  </main>
+
+  <footer><p>Rowlet Works is the independent work of Jianhao Cheng.<br>Original studies, made with code and AI-assisted tools.</p><a href="https://github.com/RowletCC">GitHub <span aria-hidden="true">↗</span></a><span>SHANGHAI · 2026</span></footer>
+
+  <dialog id="preview" aria-labelledby="preview-title"><div class="preview-bar"><h2 id="preview-title">Study preview</h2><a id="standalone" href="./studies/form-field/">Open full page <span aria-hidden="true">↗</span></a><button id="close-preview" type="button" autofocus>Close <span aria-hidden="true">×</span></button></div><div id="preview-stage"></div></dialog>
+</body>
+</html>

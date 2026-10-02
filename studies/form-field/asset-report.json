@@ -1,0 +1,89 @@
+{
+  "artifact": "form-field.glb",
+  "bytes": 347308,
+  "sha256": "6b0d6d9c5793251a1a9f0f1ed574ab89778dcc8bf643d8cb2bd7a936ae60ef43",
+  "durationSeconds": 12,
+  "animatedObjects": 24,
+  "animationTracks": 72,
+  "keyframesPerTrack": 241,
+  "geometryTrianglesPerPrism": 108,
+  "totalInstancedTriangles": 2592,
+  "materials": 3,
+  "textures": 0,
+  "loopMaxComponentDifference": 1.1943401196115274e-15,
+  "khronosErrors": 0,
+  "khronosWarnings": 0,
+  "verified": [
+    "Khronos glTF Validator",
+    "Three.js GLTFLoader re-import",
+    "241 animation samples: finite transforms and positive scales",
+    "start/end transform agreement"
+  ],
+  "notVerified": [
+    "Unity import/playback",
+    "FBX export",
+    "game-specific GPU budget"
+  ],
+  "samples": [
+    {
+      "seconds": 0,
+      "first_prism": [
+        0,
+        0,
+        2.5,
+        0.3499999940395355,
+        1.9914631843566895,
+        0.41999998688697815,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "seconds": 4.2,
+      "first_prism": [
+        -2.240000009536743,
+        0,
+        -1.3799999952316286,
+        0.37000000476837164,
+        0.6200000047683717,
+        0.4600000083446503,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "seconds": 8.7,
+      "first_prism": [
+        0,
+        0.05000000074505805,
+        0.899999976158142,
+        0.2899999916553497,
+        1.8500000238418577,
+        0.37999999523162836,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "seconds": 12,
+      "first_prism": [
+        0,
+        3.469446951953614e-17,
+        2.5,
+        0.3499999940395355,
+        1.9914631843566895,
+        0.41999998688697815,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

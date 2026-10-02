@@ -1,0 +1,17 @@
+{
+  "name": "form-field",
+  "version": "1.0.0",
+  "description": "Original kinetic infographic study and inspectable animated GLB",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "dependencies": {
+    "gltf-validator": "2.0.0-dev.3.10",
+    "three": "0.182.0"
+  },
+  "private": true
+}
