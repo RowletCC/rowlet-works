@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nightjar · a vector loop</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#071922;color:#dbe0dc;font:15px/1.6 Arial,sans-serif}main{max-width:1050px;margin:auto;padding:35px 5%}header{display:flex;justify-content:space-between;gap:25px;align-items:center;border-bottom:1px solid #36505a;padding-bottom:18px}h1{font-size:32px;letter-spacing:-1.3px;font-weight:400;margin:0}a{color:inherit;text-underline-offset:5px}header a{font-size:12px}.scene svg{display:block;width:100%;height:auto}.scene .pan{animation-play-state:paused}body.playing .scene .pan{animation-play-state:running}.controls{display:flex;align-items:center;gap:30px;flex-wrap:wrap;border-top:1px solid #36505a;padding-top:20px}button{font:13px Arial;background:#dbe0dc;color:#102a37;padding:12px 19px;border:0;cursor:pointer;min-width:130px}button:focus-visible,a:focus-visible{outline:3px solid #d8ab69;outline-offset:5px}.controls a{font-size:12px}p{font-size:13px;color:#bac8c9;max-width:630px;margin:25px 0 0}.note{font-size:11px;color:#a4b7be;margin-top:14px}@media(prefers-reduced-motion:reduce){.scene .pan{animation:none!important}}
+</style></head><body><main><header><h1>Nightjar</h1><a href="../../">Rowlet Works ↗</a></header><div class="scene"><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="A seamless moving night salt marsh seen through a fixed Nightjar Rail carriage window">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#0b1b2d"/><stop offset=".62" stop-color="#1b3647"/><stop offset="1" stop-color="#485b5c"/></linearGradient>
+    <linearGradient id="water" x2="0" y2="1"><stop stop-color="#283e48"/><stop offset="1" stop-color="#0c2432"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#f0c680" stop-opacity=".75"/><stop offset=".28" stop-color="#d8ab69" stop-opacity=".23"/><stop offset="1" stop-color="#d8ab69" stop-opacity="0"/></radialGradient>
+    <clipPath id="glass"><rect x="88" y="82" width="1024" height="636" rx="124"/></clipPath>
+    <g id="bank">
+      <path d="M0 427 C120 411 183 421 265 409 C361 396 423 423 516 419 C614 411 658 399 744 412 C844 430 899 402 1003 410 C1093 415 1141 422 1200 427 L1200 610 L0 610Z" fill="#173443"/>
+      <path d="M0 453 C141 444 183 460 285 451 C416 440 441 457 563 450 C688 444 741 461 872 451 C986 443 1078 450 1200 453" fill="none" stroke="#697b6f" stroke-width="4" opacity=".47"/>
+      <path d="M0 468H1200" stroke="#a5ad8d" stroke-width="1" opacity=".24"/>
+    </g>
+    <g id="marsh">
+      <path d="M0 540 C91 529 170 557 260 543 C352 530 425 546 518 538 C650 527 696 556 819 542 C944 531 1032 546 1200 540 L1200 690 L0 690Z" fill="#152f3c"/>
+      <path d="M0 570 C135 555 216 580 342 567 C472 552 526 579 651 567 C779 553 863 579 976 565 C1065 557 1144 563 1200 570" fill="none" stroke="#507071" stroke-width="5" opacity=".6"/>
+      <g fill="none" stroke="#6d7d6a" stroke-width="4" stroke-linecap="round">
+        <path d="M38 572l-17-78 M43 571l29-102 M61 574l-4-56 M173 567l-31-72 M178 566l19-91 M217 567l6-64 M310 569l-15-79 M317 567l27-69 M352 570l-2-53 M480 570l-24-102 M491 569l29-79 M547 567l-5-73 M637 569l-21-83 M648 567l36-106 M702 572l-1-57 M793 570l-23-91 M802 570l23-65 M936 568l-32-84 M940 570l15-90 M972 568l-3-51 M1081 569l-21-78 M1092 569l26-89 M1167 569l-7-51"/>
+      </g>
+      <g fill="#8b8c69" opacity=".62"><ellipse cx="21" cy="494" rx="4" ry="13" transform="rotate(-13 21 494)"/><ellipse cx="71" cy="470" rx="4" ry="12" transform="rotate(18 71 470)"/><ellipse cx="197" cy="475" rx="4" ry="13"/><ellipse cx="344" cy="498" rx="4" ry="12"/><ellipse cx="456" cy="468" rx="4" ry="13"/><ellipse cx="683" cy="462" rx="4" ry="14"/><ellipse cx="770" cy="480" rx="4" ry="13"/><ellipse cx="955" cy="479" rx="4" ry="13"/><ellipse cx="1118" cy="480" rx="4" ry="12"/></g>
+    </g>
+    <g id="lamps">
+      <g fill="url(#glow)"><circle cx="464" cy="342" r="68"/><circle cx="519" cy="337" r="60"/><circle cx="576" cy="346" r="64"/></g>
+      <g fill="#f4d6a2"><circle cx="464" cy="342" r="4.5"/><circle cx="519" cy="337" r="4.5"/><circle cx="576" cy="346" r="4.5"/></g>
+      <g stroke="#d5ad73" stroke-linecap="round" opacity=".46"><path d="M464 393v43 M519 390v49 M576 399v38" stroke-width="2"/><path d="M453 449h22 M508 452h22 M565 449h22" stroke-width="3"/></g>
+    </g>
+  </defs>
+  <style>
+    .pan { animation: travel 8s linear infinite; }
+    @keyframes travel { from { transform: translateX(0px); } to { transform: translateX(-1200px); } }
+    @media (prefers-reduced-motion: reduce) { .pan { animation: none; } }
+  </style>
+  <rect width="1200" height="800" fill="#081824"/>
+  <g clip-path="url(#glass)">
+    <rect x="88" y="82" width="1024" height="636" fill="url(#sky)"/>
+    <circle cx="964" cy="215" r="34" fill="#d4c3a4" opacity=".68"/>
+    <path d="M115 421H1090V718H115Z" fill="url(#water)"/>
+    <g opacity=".46" fill="none" stroke="#aab2a2" stroke-width="2">
+      <path d="M119 472h280 M614 478h442 M181 500h123 M410 502h210 M761 503h270 M110 536h157 M377 528h160 M682 535h344 M121 582h205 M557 586h313 M917 587h167"/>
+    </g>
+    <g class="pan"><use href="#bank"/><use href="#bank" x="1200"/><use href="#lamps"/><use href="#lamps" x="1200"/><use href="#marsh"/><use href="#marsh" x="1200"/></g>
+    <path d="M140 138C160 113 206 105 240 111" fill="none" stroke="#f8edd2" stroke-width="6" opacity=".08"/>
+    <path d="M1032 123C1061 183 1060 260 1057 290" fill="none" stroke="#f8edd2" stroke-width="4" opacity=".08"/>
+  </g>
+  <rect x="46" y="40" width="1108" height="720" rx="162" fill="none" stroke="#18313d" stroke-width="76"/>
+  <rect x="55" y="49" width="1090" height="702" rx="153" fill="none" stroke="#c2ab85" stroke-width="7"/>
+  <rect x="86" y="80" width="1028" height="640" rx="126" fill="none" stroke="#60707a" stroke-width="3"/>
+  <path d="M122 735H1078" stroke="#273c45" stroke-width="10" stroke-linecap="round"/>
+  <text x="111" y="53" fill="#cfbf9d" font-family="Georgia, 'Times New Roman', serif" font-size="19" letter-spacing="4">NIGHTJAR RAIL</text>
+  <text x="1091" y="53" text-anchor="end" fill="#cfbf9d" font-family="Arial, sans-serif" font-size="14" letter-spacing="3">23:47 · ASH QUAY → MERE END</text>
+</svg>
+</div><div class="controls"><button id="play" aria-pressed="false">Play loop</button><a href="window.svg" download>Download SVG ↓</a><span id="status" role="status">Paused</span></div><p>A night salt marsh seen from a train. Three layers of reeds, water and distant lamps move at different speeds; the carriage window stays still.</p><p class="note">Original eight-second vector animation, built with SVG and CSS using AI-assisted tools. An independent study with a fictional setting, not a shipped client game or a commission for Throughput Studios. Reduced-motion preferences are respected.</p></main><script>
+const play=document.querySelector('#play'),status=document.querySelector('#status');const reduced=matchMedia('(prefers-reduced-motion: reduce)');function setPlaying(on){on=on&&!reduced.matches;document.body.classList.toggle('playing',on);play.textContent=on?'Pause loop':'Play loop';play.setAttribute('aria-pressed',String(on));status.textContent=reduced.matches?'Motion reduced by your device setting':on?'Playing · 8-second loop':'Paused';}play.addEventListener('click',()=>setPlaying(!document.body.classList.contains('playing')));document.addEventListener('visibilitychange',()=>{if(document.hidden)setPlaying(false)});reduced.addEventListener('change',()=>setPlaying(false));setPlaying(false);
+</script></body></html>
