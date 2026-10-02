@@ -16,4 +16,6 @@ The catalogue loads no third-party runtime assets. Three.js is vendored in its s
 
 ## Publication
 
-Prepared and reviewed locally. This catalogue has not yet been published. GitHub API access returned EOF and a public HTTPS connection failed with SSL_ERROR_SYSCALL during this turn. The original two study sites were published earlier; their publication is separate from this new catalogue.
+Published in the public `RowletCC/rowlet-works` repository and deployed through GitHub Pages. The two standalone study repositories remain linked as the original sources.
+
+An additional Nightjar SVG motion sample is available under `studies/nightjar/`. Its Play/Pause control, CSS translation and actual visual output were checked in the browser. It is an independent fictional study.
